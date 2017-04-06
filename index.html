@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex box</title>
+  <style >
+    @font-face {
+    font-family: Forza;
+    src: url(Forza-Medium.otf);
+    }
+    @font-face {
+    font-family: Forza-Book;
+    src: url(Forza-Book.otf);
+    }
+    body{
+      margin: 0;
+    }
+    img{
+      max-width: 30%;
+      align-self: center;
+    }
+    .container{
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+
+    }
+    .first{
+      display: flex;
+      justify-content: center;
+      flex: 1;
+    }
+    .font-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 1rem;
+
+    }
+    .second{
+      flex: 1;
+    }
+    input{
+      display: flex;
+      border: none;
+      border-bottom: 1px solid black;
+      flex: 2;
+      padding: 1rem;
+      color: #B3DAA6;
+      letter-spacing: 0.2rem;
+      font-family: Forza;
+    }
+    h1{
+      flex: 1;
+      letter-spacing: 0.1rem;
+      font-family: Forza;
+      color: #7D7773;
+      font-size: 0.8rem;
+
+    }
+
+    .tercero{
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-end;
+      flex-direction: column;
+
+    }
+    .a{
+      text-align: center;
+      background-color: #9CCF8A;
+      padding: 1.5rem;
+      letter-spacing: 0.1rem;
+      font-family: Forza;
+      color: white;
+      font-size: 0.75rem;
+    }
+    .b{
+      text-align: center;
+      background-color: #7D7773;
+      padding: 1.5rem;
+      letter-spacing: 0.1rem;
+      font-family: Forza;
+      color: #FBFCFA;
+      font-size: 0.75rem;
+
+
+    }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="first">
+        <img src="logo-whitebg.png" >
+      </div>
+
+      <div class="second">
+        <div class="font-container">
+        <h1>Email</h1>
+        <input type="text" value="pedro@fvi.edu"></input>
+        </div>
+        <div class="font-container">
+        <h1>Password</h1>
+        <input type="password" value="12309" ></input>
+        </div>
+      </div>
+
+      <div class="tercero">
+      <div class="a">SIGN IN</div>
+      <div class="b">SING UP</div>
+      </div>
+    </div>
+</body>
+</html>
